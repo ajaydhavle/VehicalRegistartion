@@ -1,0 +1,14 @@
+create database vehicalmgmt;
+CREATE TABLE [dbo].[VEHICAL](
+	[VEHICAL_ID] [int] NOT NULL IDENTITY(1,1),
+	[REGISTRATION_NUMBER] [varchar](50) NOT NULL UNIQUE,
+	[OWNER_NAME] [varchar](50) NULL,
+	[BRAND] [varchar](50) NULL,
+	[REGISTRATION_EXPIRE_DATE] [datetime2](7) NULL,
+	[CREATED_BY] [varchar](50) NULL,
+	[CREATION_TIME] [datetime] NULL,
+	[MODIFIED_BY] [varchar](50) NULL,
+	[MODIFIED_TIME] [datetime] NULL,
+	[STATUS] [varchar] not null,
+	PRIMARY KEY (VEHICAL_ID)
+)
